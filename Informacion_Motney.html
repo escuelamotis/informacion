@@ -86,7 +86,7 @@
         }
         }
 		  #informacion {
-            width: 80%;
+            width: 100%;
             height: auto;
         }
 			.redes-sociales {
@@ -106,16 +106,42 @@
             height: 300px;
 		
         }
+.step-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #6d009b;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
     </style>
 </head>
 <body>
-            <div class="step">
-                <h2><span class="step-number">2</span>
-                Confirma tu pago por Whatsapp</h2>
-                <p>Después de realizar el pago, por favor confirma la transacción a través de Whatsapp haciendo clic en el botón de abajo. para enviarte la plantilla de costos Motney y el video de ejemplo</p>
-				<a href="https://api.whatsapp.com/send/?phone=573246476139" target="_blank" class="whatsapp-btn">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904">
-					Confirmar pago por <strong>Whatsapp</strong>
-				</a>
+  <a href="#Comprar" class="step-button"><span class="icon">&#x1F447;&#x1F3FC;</span> Comprar plantilla</a>
+    <img id="informacion" src="https://drive.google.com/uc?export=view&id=1Y1U04Ylg4iozMVwYDDusP-kpX5lbokdm" alt="Información Motney">
+            <div id="Comprar" class="step">
+                <h2><span class="step-number">1</span>Realiza el pago a través de Wompi</h2>
+                <p>Selecciona tu método de pago preferido y sigue las instrucciones en pantalla para comprar tu plantilla</p>
+				<div class="payment-methods">
+				<iframe src="https://checkout.wompi.co/l/SUZxBc" width="100%" height="768"></iframe>
+			</div>
+			</div>
+
+			<div class="redes-sociales">
+		<a href="https://www.facebook.com/profile.php?id=100083080994547" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" width="30" height="30"></a>
+		<a href="https://www.instagram.com/escuela_motis" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30"></a>
+		<a href="https://www.youtube.com/@escuelamotis696" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="Youtube" width="30" height="30"></a>
+		<a href="https://www.tiktok.com/@escuelamotis" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/TikTok.png" alt="Youtube" width="30" height="40"></a>
+
+	</div>
+
+<!-- Aviso de privacidad -->
+		<div class="aviso-privacidad">
+			<p>Producto de uso personal, prohibida su venta y distribución</p>
+		</div>
+		<img id="logoEscuela" src="https://drive.google.com/uc?export=view&id=1kT1ZFfupay0Vu1tm71x-YVlU3z8kBgT4" alt="Escuela Motis">
+		</body>
 </body>
 </html>
