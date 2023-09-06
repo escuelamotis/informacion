@@ -177,6 +177,10 @@
     margin: 0 20px;
   }
 }
+.logos-container {
+    display: flex;
+    align-items: center; /* Alinear verticalmente las imágenes */
+}
 
     </style>
 </head>
@@ -208,17 +212,23 @@
 			</div>
 
 			<div class="redes-sociales">
-		<a href="https://www.facebook.com/profile.php?id=100083080994547" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" width="30" height="30"></a>
-		<a href="https://www.instagram.com/escuela_motis" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30"></a>
-		<a href="https://www.youtube.com/@escuelamotis696" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="Youtube" width="30" height="30"></a>
-		<a href="https://www.tiktok.com/@escuelamotis" target="_blank"><img src="https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" alt="tiktok" width="30" height="30"></a>
 
 	</div>
 <!-- Aviso de privacidad -->
 		<div class="aviso-privacidad">
 		<img id="wompi" src="https://drive.google.com/uc?export=view&id=1viyoCWz2qjCsi1zy6_lK5Njwuu_K3k1S">
 		</div>
-		<img id="logoEscuela" src="https://drive.google.com/uc?export=view&id=1kT1ZFfupay0Vu1tm71x-YVlU3z8kBgT4" alt="Escuela Motis">
+		<div class="logos-container">
+		    <!-- Link a la red social de "Escuela Motis" -->
+		    <a href="https://www.instagram.com/escuela_motis" target="_blank" rel="noopener noreferrer">
+		        <img src="https://drive.google.com/uc?export=view&id=1kT1ZFfupay0Vu1tm71x-YVlU3z8kBgT4" alt="Escuela Motis">
+		    </a>
+		    <!-- Link a la red social de "La tiendta detalles" -->
+		    <a href="https://www.instagram.com/la_tiendita_cucuta" target="_blank" rel="noopener noreferrer">
+		        <img src="https://drive.google.com/uc?export=view&id=1IzlW19BU0qf9mqIag4OekaCd3i4ewowt" alt="La tiendita detalles">
+		    </a>
+		</div>
+
 <script>
   document.getElementById('wompi-container1').addEventListener('click', function(event) {
     event.preventDefault();
