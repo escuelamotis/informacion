@@ -187,10 +187,15 @@
                 <h2><span class="step-number">1</span>Realiza el pago </h2>
                 <p>Selecciona tu método de pago preferido y sigue las instrucciones en pantalla para comprar tu taller</p>
 				<div class="payment-methods">
-					<a id="wompi-container"> Papelería creativa - Sin plotter de corte (segunda etapa)
+					<a id="wompi-container1"> Papelería creativa - Sin plotter de corte
 					  <img id="wompi-logo" src="https://wompi.com/assets/img/home/logo-wompi.svg">
 					  <img id="logo sin Plotter" src="https://drive.google.com/uc?export=view&id=1wbx8THJkAN0bbG4mCem34ofvRQuMLLTL">
-					  <button id="wompi-button">Pagar con Wompi</button>
+					  <button id="wompi-button">$ 332.500 (segunda etapa) </button>
+					</a>
+					<a id="wompi-container2"> Papelería creativa - Con plotter de corte Cameo
+					  <img id="wompi-logo" src="https://wompi.com/assets/img/home/logo-wompi.svg">
+					  <img id="logo sin Plotter" src="https://drive.google.com/uc?export=view&id=18JTSl1WhOuplxz3STGSCQDdwJV0Ao36B">
+					  <button id="wompi-button">$ 399.000 (segunda etapa)</button>
 					</a>
 					<a id="bancolombia-container" href="#">
 					  <img id="bancolombia-qr" src="https://polymedicaldecolombia.com/wp-content/uploads/territorio-qr-1.png">
@@ -218,9 +223,13 @@
 		</div>
 		<img id="logoEscuela" src="https://drive.google.com/uc?export=view&id=1kT1ZFfupay0Vu1tm71x-YVlU3z8kBgT4" alt="Escuela Motis">
 <script>
-  document.getElementById('wompi-container').addEventListener('click', function(event) {
+  document.getElementById('wompi-container1').addEventListener('click', function(event) {
     event.preventDefault();
     window.open('https://checkout.wompi.co/l/TR1mwD', 'Wompi Payment', 'width=800,height=600');
+  });
+ document.getElementById('wompi-container2').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open('https://checkout.wompi.co/l/g5mjYR', 'Wompi Payment', 'width=800,height=600');
   });
   document.getElementById('bancolombia-container').addEventListener('click', function(event) {
     event.preventDefault();
