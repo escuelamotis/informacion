@@ -191,16 +191,6 @@
 					  <img id="wompi-logo" src="https://wompi.com/assets/img/home/logo-wompi.svg">
 					  <button id="wompi-button">Pagar con Wompi</button>
 					</a>
-					<a id="paypal-container" href="#">
-					  <img id="paypal-logo" src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png">
-					  <button id="paypal-button">Pagar con PayPal</button>
-					</a>
-
-					<a id="mercadopago-container" href="#">
-					  <img id="mercadopago-logo" src="https://http2.mlstatic.com/frontend-assets/home-landing/logo-mercadopago.jpg">
-					  <button id="mercadopago-button">Pagar con MercadoPago</button>
-					</a>
-
 					<a id="bancolombia-container" href="#">
 					  <img id="bancolombia-qr" src="https://polymedicaldecolombia.com/wp-content/uploads/territorio-qr-1.png">
 					  <button id="bancolombia-button">Pagar QR Bancolombia</button>
@@ -231,17 +221,6 @@
     event.preventDefault();
     window.open('https://checkout.wompi.co/l/SUZxBc', 'Wompi Payment', 'width=800,height=600');
   });
-
-  document.getElementById('paypal-container').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.open('https://www.paypal.com/paypalme/davidpiedrahita1', 'Paypal Payment', 'width=800,height=600');
-  });
-
-  document.getElementById('mercadopago-container').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.open('http://mpago.li/2Vq1BQP', 'MercadoPago Payment', 'width=800,height=600');
-  });
-
   document.getElementById('bancolombia-container').addEventListener('click', function(event) {
     event.preventDefault();
     window.open('https://drive.google.com/uc?export=view&id=1riUkcdTBbHCVY9pzuzMH67kLBuWKZ7Ys', 'QR Bancolombia Payment', 'width=800,height=600');
