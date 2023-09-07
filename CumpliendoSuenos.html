@@ -131,8 +131,8 @@
 
 #wompi-container1,
 #wompi-container2,
-#mercadopago-container,
-#bancolombia-container {
+#bancolombia-container1,
+#bancolombia-container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,7 +171,8 @@
   
   #wompi-container1,
   #wompi-container2,
-  #bancolombia-container {
+  #bancolombia-container1,
+  #bancolombia-container2 {
     margin: 0 20px;
   }
 }
@@ -224,15 +225,15 @@
 			<!-- Sección de pago por QR -->
 			<div class="payment-section">
 			    <h2>Pago mediante QR</h2>
-			    <a id="bancolombia-container" href="https://drive.google.com/uc?export=view&id=1riUkcdTBbHCVY9pzuzMH67kLBuWKZ7Ys">
-				<img id="bancolombia-qr" src="https://polymedicaldecolombia.com/wp-content/uploads/territorio-qr-1.png">
-				<div>Realiza la transferencia por el valor del taller</div>
-				<button id="bancolombia-button">Pagar QR Bancolombia</button>
+			    <a id="bancolombia-container1">
+				<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1wz5_aL2ao9TW9iIzVVT833711GDH_evv">
+				<div>Sin plotter de corte</div>
+				<button id="bancolombia-button">$332.500 (Segunda etapa)</button>
 			     </a>
-				<a id="bancolombia-container" href="https://drive.google.com/uc?export=view&id=1riUkcdTBbHCVY9pzuzMH67kLBuWKZ7Ys">
-				<img id="bancolombia-qr" src="https://polymedicaldecolombia.com/wp-content/uploads/territorio-qr-1.png">
-				<div>Realiza la transferencia por el valor del taller</div>
-				<button id="bancolombia-button">Pagar QR Bancolombia</button>
+				<a id="bancolombia-container2">
+				<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1svOp6g1CApmz8zf0XaLxQ02hI_YDxF2s">
+				<div>Con plotter de corte Cameo</div>
+				<button id="bancolombia-button">$399.000 (Segunda etapa)</button>
 			     </a>
 			    <p>Escanea el código QR para completar tu pago.</p>
 			</div>
@@ -241,12 +242,12 @@
 			<div class="payment-section">
 			    <h2>Pago mediante Wompi</h2>
 			    <!-- Tus links de Wompi aquí -->
-			    <a id="wompi-container1" href="https://checkout.wompi.co/l/sBUlo9">
+			    <a id="wompi-container1">
 					<img id="wompi-logo" src="https://drive.google.com/uc?export=view&id=1wbx8THJkAN0bbG4mCem34ofvRQuMLLTL">
 					<div>Sin plotter de corte</div>
 					 <button id="wompi-button">$332.500 (Segunda etapa)</button>
 			 </a>
-			 <a id="wompi-container2" href="https://checkout.wompi.co/l/UEIcRE">
+			 <a id="wompi-container2">
 				        <img id="wompi-logo" src="https://drive.google.com/uc?export=view&id=1c2eNn_IT4EKFXqaRqllLH7G-wVsPJ5Q1">
 					<div>Con plotter de corte Cameo</div>
 				        <button id="wompi-button">$399.000 (Segunda etapa)</button>
@@ -286,9 +287,13 @@
     event.preventDefault();
     window.open('https://checkout.wompi.co/l/UEIcRE', 'Wompi Payment', 'width=800,height=600');
   });
-  document.getElementById('bancolombia-container').addEventListener('click', function(event) {
+  document.getElementById('bancolombia-container1').addEventListener('click', function(event) {
     event.preventDefault();
-    window.open('https://drive.google.com/uc?export=view&id=1riUkcdTBbHCVY9pzuzMH67kLBuWKZ7Ys', 'QR Bancolombia Payment', 'width=800,height=600');
+    window.open('https://drive.google.com/uc?export=view&id=1wz5_aL2ao9TW9iIzVVT833711GDH_evv', 'QR Bancolombia Payment', 'width=800,height=600');
+  });
+	 document.getElementById('bancolombia-container2').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open('https://drive.google.com/uc?export=view&id=1svOp6g1CApmz8zf0XaLxQ02hI_YDxF2s', 'QR Bancolombia Payment', 'width=800,height=600');
   });
 </script>
 </body>
