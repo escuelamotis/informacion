@@ -215,6 +215,9 @@
 .payment-section a {
     margin: 0 10px;
 }
+.hidden {
+    display: none;
+}
 
     </style>
 </head>
@@ -269,20 +272,20 @@
 <!-- Todas las opciones de pago se ocultan inicialmente -->
 <div id="qr1" class="payment-section hidden">
     <h2>Pago mediante QR</h2>
-			    <a id="bancolombia-container1">
-				<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1wz5_aL2ao9TW9iIzVVT833711GDH_evv">
-				<div>Sin plotter de corte</div>
-				<button id="bancolombia-button">$332.500 (Segunda etapa)</button>
-			     </a>
+	<a id="bancolombia-container1">
+	<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1wz5_aL2ao9TW9iIzVVT833711GDH_evv">
+	<div>Sin plotter de corte</div>
+	<button id="bancolombia-button">$332.500 (Segunda etapa)</button>
+    </a>
 </div>
 
 <div id="qr2" class="payment-section hidden">
     <a id="bancolombia-container2">
-	        <h2>Pago mediante QR</h2>
-				<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1svOp6g1CApmz8zf0XaLxQ02hI_YDxF2s">
-				<div>Con plotter de corte Cameo</div>
-				<button id="bancolombia-button">$399.000 (Segunda etapa)</button>
-			     </a>
+		<h2>Pago mediante QR</h2>
+		<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1svOp6g1CApmz8zf0XaLxQ02hI_YDxF2s">
+		<div>Con plotter de corte Cameo</div>
+		<button id="bancolombia-button">$399.000 (Segunda etapa)</button>
+	</a>
 </div>
 
 <div id="wompi1" class="payment-section hidden">
@@ -335,6 +338,16 @@
     event.preventDefault();
     window.open('https://drive.google.com/uc?export=view&id=1svOp6g1CApmz8zf0XaLxQ02hI_YDxF2s', 'QR Bancolombia Payment', 'width=800,height=600');
   });
+document.getElementById("payment-method-selector").addEventListener("change", function() {
+    // Oculta todas las secciones de pago
+    document.querySelectorAll('.payment-section').forEach(function(section) {
+        section.classList.add('hidden');
+    });
+    
+    // Muestra la sección de pago seleccionada
+    var selectedMethod = this.value;
+    document.getElementById(selectedMethod).classList.remove('hidden');
+});
 </script>
 </body>
 </html>
