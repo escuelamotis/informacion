@@ -93,7 +93,7 @@
         }
         }
 		  #informacion {
-            width: 90%;
+            width: 95%;
             height: auto;
         }
 			.redes-sociales {
@@ -254,6 +254,44 @@
 					<div>Con plotter de corte Cameo</div>
 				        <button id="wompi-button">$399.000 (Segunda etapa)</button>
 			 </a>
+
+			<p>Selecciona tu método de pago preferido y sigue las instrucciones en pantalla para comprar tu taller</p>
+
+<!-- Menú desplegable para seleccionar método de pago -->
+<select id="payment-method-selector">
+    <option value="" disabled selected>Elige una opción de pago</option>
+    <option value="qr1">Pago con QR - Sin plotter de corte</option>
+    <option value="qr2">Pago con QR - Con plotter de corte Cameo</option>
+    <option value="wompi1">Pago con Wompi - Sin plotter de corte</option>
+    <option value="wompi2">Pago con Wompi - Con plotter de corte Cameo</option>
+</select>
+
+<!-- Todas las opciones de pago se ocultan inicialmente -->
+<div id="qr1" class="payment-section hidden">
+    <h2>Pago mediante QR</h2>
+			    <a id="bancolombia-container1">
+				<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1wz5_aL2ao9TW9iIzVVT833711GDH_evv">
+				<div>Sin plotter de corte</div>
+				<button id="bancolombia-button">$332.500 (Segunda etapa)</button>
+			     </a>
+</div>
+
+<div id="qr2" class="payment-section hidden">
+    <a id="bancolombia-container2">
+	        <h2>Pago mediante QR</h2>
+				<img id="bancolombia-qr" src="https://drive.google.com/uc?export=view&id=1svOp6g1CApmz8zf0XaLxQ02hI_YDxF2s">
+				<div>Con plotter de corte Cameo</div>
+				<button id="bancolombia-button">$399.000 (Segunda etapa)</button>
+			     </a>
+</div>
+
+<div id="wompi1" class="payment-section hidden">
+    <!-- Contenido de pago con Wompi - Sin plotter -->
+</div>
+
+<div id="wompi2" class="payment-section hidden">
+    <!-- Contenido de pago con Wompi - Con plotter -->
+</div>
 			</div>
 				<h2><span class="step-number">2</span>Confirma tu pago por Whatsapp</h2>
                 <p>Después de realizar el pago, por favor confirma la transacción a través de Whatsapp haciendo clic en el botón de abajo.</p>
